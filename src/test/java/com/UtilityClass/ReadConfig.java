@@ -49,4 +49,5 @@ public class ReadConfig {
 		String cat = prop.getProperty("category");
 		return cat;
 	}
+	
 }

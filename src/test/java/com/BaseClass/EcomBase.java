@@ -29,7 +29,7 @@ public class EcomBase {
 	
 	
 	@Parameters({"browser"})
-	@BeforeTest
+	@BeforeTest(alwaysRun = true)
 	public void browserstart(@Optional ("chrome") String browser) {
 		if(browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();

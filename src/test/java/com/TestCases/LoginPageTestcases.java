@@ -22,7 +22,7 @@ public class LoginPageTestcases extends EcomBase{
 		Driver.get(URl);
 		LoginPageClass LPC = new LoginPageClass(Driver);
 		SoftAssert soft = new SoftAssert();
-		String ExpectedTxt = "Adminarea demo";
+		String ExpectedTxt = "Admin area demo";
 		String ActualTxt = LPC.txt1().getText();
 		soft.assertEquals(ActualTxt, ExpectedTxt);
 		soft.assertAll();
@@ -66,62 +66,5 @@ public class LoginPageTestcases extends EcomBase{
 		
 	}
 	
-	@Test(priority = 6)
-	public void ProfilenName() {
-		HomePageClass dash = new HomePageClass(Driver);
-		
-		String expectedText = "John Smith";
-		String Actualtxt = dash.ProName().getText();
-		Assert.assertEquals(Actualtxt, expectedText);
-		
-	}
 	
-	@Test(priority = 7)
-	public void pagename() {
-		HomePageClass dash = new HomePageClass(Driver);
-		SoftAssert soft = new SoftAssert();
-		
-		String Actual = "Dashboard";
-		String Expected = dash.Dasboard().getText();
-		soft.assertEquals(Actual, Expected);
-		soft.assertAll();
-	}
-	
-	@Test(priority = 8)
-	public void optionschk() throws InterruptedException {
-		HomePageClass dash = new HomePageClass(Driver);
-		dash.Catlog();
-		Thread.sleep(1000);
-		dash.Cart();
-		Thread.sleep(1000);
-		dash.Customers();
-		Thread.sleep(1000);
-		dash.Proms();
-		Thread.sleep(1000);
-		dash.ContentManagement();
-		Thread.sleep(1000);
-		dash.Configurations();
-		Thread.sleep(1000);
-		dash.system();
-		Thread.sleep(1000);
-		dash.reports();
-		Thread.sleep(1000);
-		dash.help();
-	}
-	
-	@Test(priority = 9)
-	public void Seacrhproduct() {
-		productsPageClass PPC = new productsPageClass(Driver);
-		PPC.Catlog();
-		PPC.Products();
-		PPC.productdetails(proname);
-		PPC.category(Category);
-		PPC.searchbtnclk();
-	}
-	
-	@Test(priority = 10)
-	public void logout() {
-		LogoutPageClasss LPC = new LogoutPageClasss(Driver);
-		LPC.Logoutclk();
-	}
 }
