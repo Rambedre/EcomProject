@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-19T15:23:20 IST" name="Suite" finished-at="2022-09-19T15:24:04 IST" duration-ms="43768">
+    <groups>
+    </groups>
+    <test started-at="2022-09-19T15:23:20 IST" name="Test" finished-at="2022-09-19T15:24:04 IST" duration-ms="43768">
+      <class name="com.TestCases.LoginPageTestcases">
+        <test-method is-config="true" signature="browserstart(java.lang.String)[pri:0, instance:com.TestCases.LoginPageTestcases@7c137fd5]" started-at="2022-09-19T15:23:21 IST" name="browserstart" finished-at="2022-09-19T15:23:29 IST" duration-ms="8433" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserstart -->
+        <test-method signature="HeadChk()[pri:1, instance:com.TestCases.LoginPageTestcases@7c137fd5]" started-at="2022-09-19T15:23:29 IST" name="HeadChk" finished-at="2022-09-19T15:23:32 IST" duration-ms="2627" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Adminarea demo] but found [Admin area demo]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Adminarea demo] but found [Admin area demo]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.TestCases.LoginPageTestcases.HeadChk(LoginPageTestcases.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HeadChk -->
+        <test-method signature="Wlcchk()[pri:2, instance:com.TestCases.LoginPageTestcases@7c137fd5]" started-at="2022-09-19T15:23:32 IST" name="Wlcchk" finished-at="2022-09-19T15:23:32 IST" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Wlcchk -->
+        <test-method signature="txt3()[pri:3, instance:com.TestCases.LoginPageTestcases@7c137fd5]" started-at="2022-09-19T15:23:32 IST" name="txt3" finished-at="2022-09-19T15:23:33 IST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- txt3 -->
+        <test-method signature="ckhbox()[pri:4, instance:com.TestCases.LoginPageTestcases@7c137fd5]" started-at="2022-09-19T15:23:33 IST" name="ckhbox" finished-at="2022-09-19T15:23:33 IST" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ckhbox -->
+        <test-method signature="login()[pri:5, instance:com.TestCases.LoginPageTestcases@7c137fd5]" started-at="2022-09-19T15:23:33 IST" name="login" finished-at="2022-09-19T15:23:38 IST" duration-ms="5365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="ProfilenName()[pri:6, instance:com.TestCases.LoginPageTestcases@7c137fd5]" started-at="2022-09-19T15:23:38 IST" name="ProfilenName" finished-at="2022-09-19T15:23:38 IST" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProfilenName -->
+        <test-method signature="pagename()[pri:7, instance:com.TestCases.LoginPageTestcases@7c137fd5]" started-at="2022-09-19T15:23:38 IST" name="pagename" finished-at="2022-09-19T15:23:38 IST" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pagename -->
+        <test-method signature="optionschk()[pri:8, instance:com.TestCases.LoginPageTestcases@7c137fd5]" started-at="2022-09-19T15:23:38 IST" name="optionschk" finished-at="2022-09-19T15:23:48 IST" duration-ms="9913" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- optionschk -->
+        <test-method signature="Seacrhproduct()[pri:9, instance:com.TestCases.LoginPageTestcases@7c137fd5]" started-at="2022-09-19T15:23:48 IST" name="Seacrhproduct" finished-at="2022-09-19T15:23:57 IST" duration-ms="9249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Seacrhproduct -->
+        <test-method signature="logout()[pri:10, instance:com.TestCases.LoginPageTestcases@7c137fd5]" started-at="2022-09-19T15:23:57 IST" name="logout" finished-at="2022-09-19T15:24:00 IST" duration-ms="2843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="browserClaose()[pri:0, instance:com.TestCases.LoginPageTestcases@7c137fd5]" started-at="2022-09-19T15:24:00 IST" name="browserClaose" finished-at="2022-09-19T15:24:04 IST" duration-ms="3252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClaose -->
+      </class> <!-- com.TestCases.LoginPageTestcases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
