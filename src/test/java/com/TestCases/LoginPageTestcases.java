@@ -1,5 +1,8 @@
 package com.TestCases;
 
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -11,6 +14,7 @@ import com.ObjRepo.LoginPageClass;
 import com.ObjRepo.LogoutPageClasss;
 import com.ObjRepo.productsPageClass;
 import com.UtilityClass.ReportsClass;
+import com.UtilityClass.XLReader;
 
 
 @Listeners(ReportsClass.class)
@@ -56,12 +60,16 @@ public class LoginPageTestcases extends EcomBase{
 	}
 	
 	@Test(priority = 5)
-	public void login() {
+	public void login() throws IOException {
 		LoginPageClass LPC = new LoginPageClass(Driver);
+		XLReader XL = new XLReader();
 		Assert.assertTrue(LPC.clkbtn().isDisplayed());
 		Assert.assertTrue(LPC.cbox().isEnabled());
 		LPC.cleartabs();
-		LPC.entercred(uname, passw);
+//		LPC.entercred(uname, passw);
+//		String i = XL.XlinputData("Sheet1", 0, 0).toString();
+//		String j = XL.XlinputData("Sheet1", 0, 1).toString();
+		LPC.entercred(XL.XlinputData("Sheet1", 0, 0), XL.XlinputData("Sheet1", 0, 1));
 		LPC.login();
 		
 	}

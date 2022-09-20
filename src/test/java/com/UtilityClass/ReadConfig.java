@@ -50,4 +50,13 @@ public class ReadConfig {
 		return cat;
 	}
 	
+	public String TestingType() {
+		String test = prop.getProperty("Testing_Type1");
+		return test;
+	}
+	
+	public String TestType2() {
+		String test = prop.getProperty("Testing_Type2");
+		return test;
+	}
 }

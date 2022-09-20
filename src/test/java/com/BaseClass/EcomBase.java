@@ -4,8 +4,11 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
@@ -26,22 +29,32 @@ public class EcomBase {
 	public String passw = read.password();
 	public String proname = read.proname();
 	public String Category = read.category();
-	
+	public String Testingtype1 = read.TestingType();
+	public String Testingtype2 = read.TestType2();
 	
 	@Parameters({"browser"})
 	@BeforeTest(alwaysRun = true)
 	public void browserstart(@Optional ("chrome") String browser) {
 		if(browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			Driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+//			options.addArguments(Testingtype1);
+			options.addArguments(Testingtype2);
+			Driver = new ChromeDriver(options);
 		}
 		else if(browser.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
-			Driver = new FirefoxDriver();
+			FirefoxOptions options = new FirefoxOptions();
+			options.addArguments(Testingtype1);
+//			options.addArguments("incognito");
+			Driver = new FirefoxDriver(options);
 		}
 		else if(browser.equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
-			Driver= new EdgeDriver();
+			EdgeOptions options = new EdgeOptions();
+			options.addArguments(Testingtype1);
+//			options.addArguments("incognito");
+			Driver= new EdgeDriver(options);
 		}
 		else {
 			throw new RuntimeException("Invalid Browser Value");
