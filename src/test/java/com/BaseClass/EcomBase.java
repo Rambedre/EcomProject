@@ -45,14 +45,14 @@ public class EcomBase {
 		else if(browser.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			FirefoxOptions options = new FirefoxOptions();
-			options.addArguments(Testingtype1);
+//			options.addArguments(Testingtype1);
 //			options.addArguments("incognito");
 			Driver = new FirefoxDriver(options);
 		}
 		else if(browser.equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
 			EdgeOptions options = new EdgeOptions();
-			options.addArguments(Testingtype1);
+//			options.addArguments(Testingtype1);
 //			options.addArguments("incognito");
 			Driver= new EdgeDriver(options);
 		}

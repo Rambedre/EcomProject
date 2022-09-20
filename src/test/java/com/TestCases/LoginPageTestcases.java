@@ -66,9 +66,7 @@ public class LoginPageTestcases extends EcomBase{
 		Assert.assertTrue(LPC.clkbtn().isDisplayed());
 		Assert.assertTrue(LPC.cbox().isEnabled());
 		LPC.cleartabs();
-//		LPC.entercred(uname, passw);
-//		String i = XL.XlinputData("Sheet1", 0, 0).toString();
-//		String j = XL.XlinputData("Sheet1", 0, 1).toString();
+//		LPC.entercred(uname, passw);		
 		LPC.entercred(XL.XlinputData("Sheet1", 0, 0), XL.XlinputData("Sheet1", 0, 1));
 		LPC.login();
 		
